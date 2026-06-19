@@ -8,16 +8,14 @@ Beatriz Vieira, Maria Eduarda de Macedo, Isabela Garcia, Luciana Nunes, Reinaldo
 
 ## Objetivo
 
-Aplicar na prática três modelos de ramificação Git (GitHub Flow, Git Flow e Trunk-Based Development), simulando cenários reais de equipes de engenharia de software.
+Aplicar na prática um modelo de ramificação Git (GitHub Flow), simulando cenários reais de equipes de engenharia de software.
 
 ## Estrutura do projeto
 
 ```
 sabor-caseiro/
-├── index.html       # Homepage do restaurante
+├── index.md       # Homepage do restaurante
 ├── login.md          # Especificação da área de login do admin
-├── css/style.css      # Estilos
-├── js/script.js       # Scripts
 ├── CONTRIBUTING.md    # Padrão de commits, branches e fluxo de PR
 └── .github/
     └── PULL_REQUEST_TEMPLATE.md
@@ -26,7 +24,5 @@ sabor-caseiro/
 ## Cenários executados
 
 - **Cenário 1 — GitHub Flow:** branch `nova-funcionalidade-homepage`, contribuições incrementais, PR e merge na `main`.
-- **Cenário 2 — Git Flow:** branches `develop`, `feature/login`, `release/v1.0`, `hotfix/v1.0.1`, tags `v1.0` e `v1.0.1`.
-- **Cenário 3 — Trunk-Based Development:** branches curtas `feature-*` integradas rapidamente à `main`.
 
 Veja o padrão de commits e branches em [CONTRIBUTING.md](./CONTRIBUTING.md).

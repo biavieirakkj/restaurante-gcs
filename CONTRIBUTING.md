@@ -1,6 +1,6 @@
 # Padrões de Branches, Commits, Pull Requests e Testes
 
-Este documento define os padrões adotados pela equipe para organização do repositório, nomenclatura de branches, mensagens de commit, Pull Requests e testes (simulados) do projeto Sabor Caseiro.
+Este documento define os padrões adotados pela equipe para organização do repositório, nomenclatura de branches, mensagens de commit, Pull Requests e testes (simulados) da Prova 2.
 
 ## 1. Branch principal
 
@@ -19,8 +19,6 @@ Este repositório é usado para demonstrar três modelos de ramificação, um po
 | Cenário | Modelo | Branches envolvidas |
 |---|---|---|
 | 1 | GitHub Flow | `main`, `nova-funcionalidade-homepage` |
-| 2 | Git Flow | `main`, `develop`, `feature/login`, `release/v1.0`, `hotfix/v1.0.1` |
-| 3 | Trunk-Based Development | `main`, `feature-*` (vida curta) |
 
 ## 3. Fluxo de trabalho geral
 
@@ -68,31 +66,6 @@ Regras gerais, válidas para todos os cenários:
 |---|---|
 | `nova-funcionalidade-homepage` | Branch única para as contribuições incrementais da homepage |
 
-### 4.2 Cenário 2 — Git Flow
-
-| Branch | Finalidade |
-|---|---|
-| `develop` | Integração das funcionalidades antes de uma release |
-| `feature/nome-da-feature` | Uma funcionalidade nova (ex.: `feature/login`) |
-| `release/vX.Y` | Preparação e ajustes finais de uma versão |
-| `hotfix/vX.Y.Z` | Correção urgente, criada a partir da `main` |
-
-### 4.3 Cenário 3 — Trunk-Based Development
-
-| Branch | Finalidade |
-|---|---|
-| `feature-descricao-curta` | Branch de vida curta (no máximo 1 ciclo de commit antes do merge) |
-
-Exemplos:
-
-```txt
-nova-funcionalidade-homepage
-feature/login
-release/v1.0
-hotfix/v1.0.1
-feature-cores-cardapio
-feature-ajuste-rodape
-```
 
 ## 5. Padrão de commits
 
@@ -232,20 +205,10 @@ Antes da aprovação de um Pull Request, devem ser verificados os seguintes pont
 
 - a branch segue o padrão definido na seção 4;
 - os commits seguem o padrão definido na seção 5;
-- os arquivos estão nas pastas corretas (`css/`, `js/`, raiz do projeto);
-- o código HTML/CSS/JS está legível e indentado;
+- os arquivos estão nas pastas corretas ( raiz do projeto);
 - a página foi aberta no navegador e o resultado confere com o descrito no PR;
 - não há arquivos desnecessários (ex.: `preview.png`, arquivos temporários);
 - não há conflitos com a branch de destino.
-
-## 9. Padrão de testes (simulados)
-
-Como o projeto é um site estático (HTML/CSS/JS), os "testes" exigidos pela disciplina são simulados manualmente, e não automatizados com um framework. Antes de abrir o Pull Request, quem está contribuindo deve:
-
-1. Abrir o `index.html` no navegador e verificar que a alteração aparece como esperado.
-2. Verificar que não há erros no console do navegador (F12 → Console).
-3. Testar em uma largura de tela menor (modo responsivo) quando a alteração envolver layout.
-4. Descrever o resultado dessa verificação na seção "Evidências" do Pull Request.
 
 ## 10. Checklist antes de abrir Pull Request
 
@@ -265,7 +228,6 @@ Tags marcam versões oficiais do projeto:
 
 ```bash
 git tag -a v1.0 -m "Versao 1.0 - lancamento inicial"
-git tag -a v1.0.1 -m "Hotfix - correcao do link do cardapio"
 git push origin --tags
 ```
 
