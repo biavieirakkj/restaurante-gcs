@@ -68,4 +68,14 @@ Ao longo dos anos, o restaurante conquistou a confiança da comunidade local por
 **Endereço:** Rua das Acácias, 123 — Centro  
 **Horário:** Terça a domingo, 11h às 22h  
 **Telefone:** (67) 99999-0000  
-**E-mail:** contato@saborcaseiro.exemplo  
+**E-mail:** contato@saborcaseiro.exemplo 
+
+---
+
+## Rodapé
+
+Sabor Caseiro — comida simples, acolhedora e feita com carinho.
+
+Projeto fictício desenvolvido pela equipe para a Prova 2 de Gerência de Configuração de Software.
+
+Integrante responsável por esta contribuição: Reinaldo Hashioka.
